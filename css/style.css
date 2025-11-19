@@ -141,39 +141,7 @@
   margin-left: 10px;
 }
 
-.main {
-  text-align: center;
-  background-image: url('../photos/csm_Gletscherfeeling_Moelltaler_0801_b5dd612600.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; 
-  color: white;
-  padding: 60px 20px;
-}
 
-
-.maintitle {
-  font-size: 3em;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-  margin: 0;
-}
-
-.mainsubtitle {
-  font-size: 1.2em;
-  text-shadow: 3px 3px 6px rgba(0,0,0,0.6);
-  font-weight: bold;
-  font-family: Arial, sans-serif;
-  margin-top: 20px;
-  color: #091624;
-  background-color: #eee;
-  display: inline-block;
-  padding: 5px 10px 5px 10px;
-  border-radius: 7px;
-}
-
-/* --- Адаптивность --- */
-
-/* Планшеты */
 @media (max-width: 992px) {
   .maintitle {
     font-size: 2.4em;
@@ -185,7 +153,6 @@
   }
 }
 
-/* Телефоны */
 @media (max-width: 600px) {
   .main {
     padding: 40px 10px;
@@ -427,38 +394,6 @@ button.prev:hover, button.next:hover {
 
 button.prev { left: 10px; }
 button.next { right: 10px; }
-
-
-/* Cards */
-.destinations {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 40px;
-}
-
-.card {
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-.card-img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.card-title {
-  margin: 10px;
-}
-
 
 
 /* FOOTER */
@@ -791,6 +726,4 @@ button.next { right: 10px; }
     flex: 1 1 100%;
   }
 }
-
-
 

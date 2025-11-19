@@ -1,0 +1,250 @@
+.about-our-story3{
+    margin-top: 50px;
+}
+
+.guides3 {
+    margin-top: 60px;
+}
+
+.our-story3 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.story-content3 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #091624;
+    font-family: 'gabriola';
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.small-grid3 {
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px 0 50px 0;
+    max-width: 100%;
+}
+
+
+.row3 {
+    display: flex;
+    flex-wrap: wrap;          
+    justify-content: center;  
+    gap: 5px;                
+}
+
+.person-box3 {
+    width: 350px;             
+    height: auto;
+    text-align: center;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    flex: 0 0 auto;           
+}
+
+.person-box3:hover {
+    transform: scale(1.015);
+}
+
+.photo-coach3 {
+    width: 100%;
+    height: 300px;
+}
+
+.name3 {
+    font-size: 1.2em;
+    color: #091624;
+    margin-top: 10px;
+}
+
+.pinfo3 {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+
+@media (max-width: 1000px) {
+    .row3 {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 700px) {
+    .small-grid3 {
+        margin: 0 10px;
+        padding: 10px;
+    }
+    .row3 {
+        gap: 20px;
+    }
+}
+
+/* Search engine categories */
+
+.search-panel {
+    background-color: #dbe4e8;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    overflow: flex;
+    margin-bottom: 30px;
+}
+
+.top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    gap: 10px;
+}
+
+.results {
+    font-weight: 600;
+}
+
+.map-view,
+.filter-btn {
+    background: none;
+    border: none;
+    color: #1e5b70;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.map-view:hover,
+.filter-btn:hover {
+    color: #0b3d4b;
+    transform: scale(1.05);
+}
+
+.right-controls {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.results-per-page,
+.sort-by {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+select {
+    padding: 6px 10px;
+    border: 1px solid #b5c1c6;
+    border-radius: 6px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    border-color: #3a7b90;
+}
+
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #e5eef1;
+    padding: 15px;
+    border-top: 1px solid #cfd8db;
+}
+
+.categories button {
+    background-color: #e5eef1;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+    color: #1e2b33;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.categories button span {
+    background-color: #c5d3d8;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    margin-left: 6px;
+}
+
+.categories button:hover {
+    background-color: #d2e4ea;
+    transform: translateY(-2px);
+}
+
+.categories button.active {
+    background-color: #3a7b90;
+    color: white;
+}
+
+.categories button.active span {
+    background-color: #2c5f70;
+    color: white;
+}
+
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #dfe7ea;
+    border-top: 1px solid #cfd8db;
+}
+
+.categories button {
+    flex: 1;
+    background-color: #e5ecf0;
+    border: 1px solid #d0d8db; /* ✅ thin border between buttons */
+    border-radius: 10px; /* ✅ square corners like in the photo */
+    padding: 14px 20px;
+    font-weight: 600;
+    color: #1e2b33;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.categories button span {
+    background-color: #ccd6db;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+}
+
+/* on hover */
+.categories button:hover {
+    background-color: #d2dde1;
+}
+
+/* active category */
+.categories button.active {
+    background-color: #2e7a90; /* ✅ dark teal like in the screenshot */
+    color: white;
+}
+
+.categories button.active span {
+    background-color: #216373;
+    color: white;
+}
+
+/* responsiveness */
+@media (max-width: 700px) {
+    .categories {
+        flex-direction: column;
+    }
+
+    .categories button {
+        width: 100%;
+    }
+}
