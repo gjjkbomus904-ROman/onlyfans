@@ -1,8 +1,8 @@
 const slides = document.querySelector(".slides");
 const slideImages = document.querySelectorAll(".slide");
 const dots = document.querySelectorAll(".dot");
-const nextBtn = document.querySelector(".next");
-const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".nextb");
+const prevBtn = document.querySelector(".prevb");
 
 let current = 0;
 let interval;
