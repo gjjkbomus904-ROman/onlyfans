@@ -243,22 +243,14 @@
   height: 100%;
 }
 
-/* Image sizes and format — use only image classes */
-.slides-1 > .slide1-1,
-.slides-1 > .slide1-2,
-.slides-1 > .slide1-3,
-.slides-2 > .slide2-1,
-.slides-2 > .slide2-2,
-.slides-2 > .slide2-3,
-.slides-3 > .slide3-1,
-.slides-3 > .slide3-2,
-.slides-3 > .slide3-3 {
+.slides-1 > .slidebox,
+.slides-2 > .slidebox,
+.slides-3 > .slidebox {
   width: 100%;
-  flex: 0 0 100%; /* each image takes full width of its slider */
+  flex: 0 0 100%;
   height: 100%;
-  object-fit: cover;
-  display: block; 
-} 
+}
+
 
 /* ANIMATIONS (each slider with its own speed) */
 /* Slider 1 */
@@ -307,6 +299,35 @@
   animation-play-state: paused;
 }
 
+@media (max-width: 1024px) {
+  .slider-row {
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .slider-1, .slider-2, .slider-3 {
+    max-width: 45%;
+    min-width: 280px;
+    height: 240px;
+  }
+}
+
+@media (max-width: 800px) {
+  .slider-row {
+    flex-direction:row;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+  }
+
+  .slider-1, .slider-2, .slider-3 {
+    width: 100%;
+    max-width: 450px;
+    height: 220px;
+  }
+}
+
 .offers{
   text-align: center;
   font-size: 3em;
@@ -315,53 +336,6 @@
   font-family: 'gabriola';
   text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
 }
-
-/* === TABLETS === */
-@media (max-width: 1024px) {
-  .slider-row {
-    gap: 30px;
-    padding: 30px;
-    flex-wrap: wrap; 
-  }
-
-  .slider-1, .slider-2, .slider-3 {
-    max-width: 45%;  
-    min-width: 300px;
-    height: 220px;
-  }
-
-  .caption {
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
-}
-
-/* === MOBILE PHONES === */
-@media (max-width: 768px) {
-  .slider-row {
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    align-items: center;
-  }
-
-  .slider-1, .slider-2, .slider-3 {
-    max-width: 90%;
-    width: 90%;
-    height: 180px;
-  }
-
-  .caption {
-    font-size: 0.9rem;
-    padding: 8px 15px;
-  }
-
-  .offers {
-    font-size: 2em;
-    margin: 20px 0;
-  }
-}
-
 
 /* Big(2) sliders */
 
