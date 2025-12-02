@@ -714,6 +714,7 @@ button.next { right: 10px; }
 }
 
 .textmain {
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 3em;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
   text-align: center;
@@ -724,9 +725,9 @@ button.next { right: 10px; }
   line-height: 1.6;
   text-align:left;
   overflow-wrap:break-word;
-  font-size: 1.3em;
+  font-size: 1.1em;
   color: #091624;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;   
   text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
   margin: 30px;
 }
@@ -748,6 +749,7 @@ button.next { right: 10px; }
   letter-spacing: 1px;
   text-transform: uppercase;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  font-family: 'Poppins', sans-serif;   
   text-align: center;
 }
 
@@ -818,11 +820,15 @@ button.next { right: 10px; }
 
 .story-content {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #091624;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;   
   text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
   margin: 0 50px 40px 50px;
+    display: flex;
+    justify-content: center; /* горизонтальное выравнивание */
+    align-items: center;     /* вертикальное выравнивание */
+    height: 200px;           /* высота блока, чтобы было куда центрировать */
 }
 
 .small-grid {
