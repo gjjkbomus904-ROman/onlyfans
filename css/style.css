@@ -788,7 +788,7 @@ button.next { right: 10px; }
   text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.6);
 }
 
-.history-container h3 {
+.history-container h2 {
   text-align: center;
   font-size: 28px;
   font-weight: bold;
@@ -825,10 +825,10 @@ button.next { right: 10px; }
   font-family: 'Poppins', sans-serif;   
   text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
   margin: 0 50px 40px 50px;
-    display: flex;
-    justify-content: center; /* горизонтальное выравнивание */
-    align-items: center;     /* вертикальное выравнивание */
-    height: 200px;           /* высота блока, чтобы было куда центрировать */
+  display: flex;
+  justify-content: center; /* горизонтальное выравнивание */
+  align-items: center;     /* вертикальное выравнивание */
+  height: 200px;           /* высота блока, чтобы было куда центрировать */
 }
 
 .small-grid {
@@ -1047,4 +1047,5 @@ button.next { right: 10px; }
 
 .btn:hover {
   background-color: #008dd1;
+
 }
