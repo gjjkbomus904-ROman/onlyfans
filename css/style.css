@@ -788,7 +788,7 @@ button.next { right: 10px; }
   text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.6);
 }
 
-.history-container h2 {
+.history h2 {
   text-align: center;
   font-size: 28px;
   font-weight: bold;
@@ -1049,3 +1049,4 @@ button.next { right: 10px; }
   background-color: #008dd1;
 
 }
+
